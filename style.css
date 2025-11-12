@@ -209,13 +209,13 @@ a {
   display: flex;
   align-items: center;
   gap: 3rem;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .profile-img-wrapper {
-  flex: 1 1 250px;
-  max-width: 250px;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
 }
 
 .profile-img {
