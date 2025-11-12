@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-brand">Aabir Das</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About Me</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Aabir Das</h1>
+      <p>Creative Frontend Developer & Designer</p>
+      <button class="btn-primary cta-btn">Get In Touch</button>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill">
+        <svg class="progress-circle" width="120" height="120">
+          <circle class="bg" cx="60" cy="60" r="54" />
+          <circle class="progress" cx="60" cy="60" r="54" />
+        </svg>
+        <div class="skill-text">HTML - 90%</div>
+      </div>
+      <div class="skill">
+        <svg class="progress-circle" width="120" height="120">
+          <circle class="bg" cx="60" cy="60" r="54" />
+          <circle class="progress" cx="60" cy="60" r="54" />
+        </svg>
+        <div class="skill-text">CSS - 80%</div>
+      </div>
+      <div class="skill">
+        <svg class="progress-circle" width="120" height="120">
+          <circle class="bg" cx="60" cy="60" r="54" />
+          <circle class="progress" cx="60" cy="60" r="54" />
+        </svg>
+        <div class="skill-text">JavaScript - 70%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="profile-img-wrapper">
+        <img src="https://via.placeholder.com/250" alt="Profile Image" class="profile-img" />
+      </div>
+      <div class="about-text">
+        <p>
+          Aabir Das is currently pursuing a Bachelor of Computer Applications (BCA) degree. He is dedicated to building strong foundational knowledge in computer science and applications, focusing on programming, web development, and software technologies. Aabir is passionate about learning and growing his technical skills for a successful career in IT.
+        </p>
+        <button class="btn-secondary cta-btn">Contact Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for contact form -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3>Contact Me</h3>
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/Aabir09" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/aabir_das_918?t=K7c6Ff62BhDlWH92M8So_g&s=08" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Aabir Das. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
