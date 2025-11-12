@@ -213,16 +213,20 @@ a {
 }
 
 .profile-img-wrapper {
-  width: 87rem;
-  height: 20rem;
-  border-radius: 100%;
+  width: 25rem; /* fixed size to make circle consistent */
+  height: 25rem;
+  border-radius: 50%; /* perfect circle */
+  overflow: hidden; /* clip overflow to keep circle shape */
+  flex-shrink: 0; /* prevent shrinking inside flex container */
 }
 
 .profile-img {
   width: 100%;
-  border-radius: 100%;
+  height: 100%; /* ensure image fills circle */
+  object-fit: cover; /* cover and crop image perfectly */
+  border-radius: 50%; /* round image edges */
   border: 5px solid var(--primary-color);
-  object-fit:cover;
+  cursor: pointer;
   box-shadow: 0 0 18px var(--primary-color);
   transition: box-shadow 0.3s ease;
   user-select: none;
